@@ -25,7 +25,7 @@ Welcome to my portfolio! Here, you'll find a curated selection of my projects, h
 ## Skills Demonstrated
 - **Programming:** Python (Automation, Data Analysis)
 - **Database Management:** PostgreSQL, SQL Queries
-- **Data Visualization:** Tableau, Power BI
+- **Data Visualization:** Power BI
 - **Tools:** VS Code, Git, pgAdmin4
 
 ---
