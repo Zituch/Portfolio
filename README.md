@@ -33,4 +33,7 @@ Welcome to my portfolio! Here, you'll find a curated selection of my projects, h
 ## About Me
 I’m a passionate developer with expertise in solving complex problems through automation, data-driven insights, and efficient coding practices. I love learning and building projects that make a real impact. Connect with me:
 - [GitHub](https://github.com/Zituch)
+
+- [LinkedIn]([#your-linkedin-profile](https://www.linkedin.com/in/abdulloh-budhi/)
+=======
 - [LinkedIn]([#your-linkedin-profile](https://www.linkedin.com/in/abdulloh-budhi/)
