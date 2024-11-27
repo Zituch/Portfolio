@@ -18,7 +18,7 @@ Welcome to my portfolio! Here, you'll find a curated selection of my projects, h
 ### SQL Projects
 1. **[E-Commerce Data Analysis](./SQL_Projects/E-Commerce_Analysis/)**
    - Complex SQL queries for data insights.
-   - Power BI and Tableau visualizations for storytelling.
+   - Power BI visualizations for storytelling.
 
 ---
 
