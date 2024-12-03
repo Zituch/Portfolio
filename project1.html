@@ -27,7 +27,6 @@
             <li>Automated hero selection</li>
             <li>Skill usage automation</li>
             <li>Continuous battle engagement</li>
-            <li>Easy setup and configuration</li>
         </ul>
     </section>
 
@@ -42,9 +41,23 @@
         <h2>Code Example</h2>
         <pre><code>
 # Example code snippet
-import pyautogui
-import pydirectinput
-from time import sleep
+def main_loop():
+    global stop_loop
+
+    while True:
+        countdown(5)  # 5-second countdown before each iteration
+        print("Starting sequence...")
+        perform_actions()  # Pre-battle setup
+
+        print("Entering battle phase...")
+        battle_finished = press_key_during_battle('1', duration=600, check_interval=2)
+
+        if battle_finished:
+            click_confirm_button()
+
+        if stop_loop:
+            print("Stop signal received. Exiting...")
+            break
 
 # Simulating a key press
 pydirectinput.press('1')
