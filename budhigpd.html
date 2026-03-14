@@ -1,53 +1,87 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<title>BudhiGPD Project</title>
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudhiGPD – LLM Fine‑Tuning & Deployment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>BudhiGPD</h1>
+        <p>End‑to‑end LLM fine‑tuning and deployment system</p>
+    </header>
 
-<header>
-<h1>BudhiGPD</h1>
-<p>LLM Fine-Tuning and Deployment Project</p>
-</header>
+    <main class="project-detail">
+        <!-- PROBLEM SECTION -->
+        <section>
+            <h2>📌 The Problem</h2>
+            <p>
+                Most LLM tutorials stop after fine‑tuning on a notebook. 
+                This project bridges the gap between experimentation and 
+                production by delivering a <strong>complete, deployable system</strong>:
+                from raw dataset to a public web app with a scalable GPU backend.
+            </p>
+        </section>
 
-<section class="intro">
+        <!-- TECH STACK -->
+        <section>
+            <h2>🛠️ Tech Stack</h2>
+            <ul>
+                <li><strong>Python</strong> – core logic</li>
+                <li><strong>PyTorch</strong> – model training & inference</li>
+                <li><strong>HuggingFace Transformers & PEFT</strong> – QLoRA fine‑tuning</li>
+                <li><strong>Gradio</strong> – interactive UI</li>
+                <li><strong>Replicate</strong> – GPU inference API</li>
+                <li><strong>HuggingFace Spaces</strong> – frontend hosting</li>
+                <li><strong>Kaggle P100 GPU</strong> – cloud training environment</li>
+            </ul>
+        </section>
 
-<p>
+        <!-- ARCHITECTURE OVERVIEW -->
+        <section>
+            <h2>🏗️ Architecture</h2>
+            <p><code>Dataset → QLoRA Fine‑tuning (Kaggle P100) → Model Merge → Local Validation → Replicate Deployment → Gradio UI (Hugging Face Spaces)</code></p>
+            <p style="margin-top: 1rem;">
+                <em>📊 Diagram placeholder:</em> Add an architecture image in <code>images/budhigpd_architecture.png</code>
+            </p>
+            <!-- Uncomment once you have the image -->
+            <!-- <img src="images/budhigpd_architecture.png" alt="Architecture diagram" style="max-width:100%; border-radius:12px; margin-top:1rem;"> -->
+        </section>
 
-BudhiGPD demonstrates a complete machine learning engineering pipeline:
-dataset preparation, QLoRA fine-tuning, model merging, and deployment.
+        <!-- KEY ENGINEERING CHALLENGES (UPDATED) -->
+        <section>
+            <h2>⚙️ Key Engineering Challenges</h2>
+            <ul>
+                <li><strong>Cloud GPU adaptation:</strong> Local machine suspended at checkpoint 102, so migrated training to <strong>Kaggle P100 GPU</strong> – demonstrating ability to work with cloud environments and recover from interruptions.</li>
+                <li><strong>Memory optimization on P100:</strong> Fine‑tuned a 3B parameter model within the P100's 16GB memory using QLoRA (4‑bit quantization) and gradient checkpointing.</li>
+                <li><strong>Adapter merging:</strong> Integrated LoRA adapters back into the base model for seamless inference without external weights.</li>
+                <li><strong>Deployment integration:</strong> Connected a Gradio interface (Hugging Face Space) to a Replicate GPU endpoint, enabling scalable, serverless inference.</li>
+                <li><strong>Dataset preparation:</strong> Cleaned and formatted custom instruction data for supervised fine‑tuning.</li>
+            </ul>
+        </section>
 
-</p>
+        <!-- LIVE DEPLOYMENTS (SOCIAL PROOF) -->
+        <section>
+            <h2>🚀 Live Deployments</h2>
+            <p>
+                <a href="https://budhi1997-budhigpd.hf.space/" target="_blank" class="button">✨ Try the Gradio App (Hugging Face)</a>
+                <a href="https://replicate.com/zituch" target="_blank" class="button">⚡ Model API on Replicate (36+ runs)</a>
+            </p>
+            <p style="font-size:0.95rem; color:#475569;">
+                The Replicate endpoint has already processed <strong>36+ inference runs</strong> – real usage, not just a demo.
+            </p>
+        </section>
 
-<h2>Tech Stack</h2>
+        <!-- BACK TO HOME -->
+        <p style="text-align: center; margin: 3rem 0 1rem;">
+            <a href="index.html" style="background: none; color: #2563eb; padding: 0;">← Back to Portfolio</a>
+        </p>
+    </main>
 
-<ul>
-
-<li>Python</li>
-<li>PyTorch</li>
-<li>HuggingFace Transformers</li>
-<li>QLoRA / PEFT</li>
-<li>Gradio</li>
-<li>Replicate Deployment</li>
-
-</ul>
-
-<h2>Architecture</h2>
-
-<p>
-
-Dataset → Fine-Tuning → Model Merge → Inference → Deployment
-
-</p>
-
-</section>
-
+    <footer>
+        <p>📬 Contact: <a href="mailto:salmanbudi@gmail.com">salmanbudi@gmail.com</a></p>
+        <p>🐙 GitHub: <a href="https://github.com/Zituch" target="_blank">github.com/Zituch</a></p>
+    </footer>
 </body>
-
 </html>
