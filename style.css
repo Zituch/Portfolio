@@ -60,23 +60,21 @@ footer a {
     color: #4da3ff;
 }
 
-/* ===== NEW STYLES FOR PROJECT DETAIL PAGES (like budhigpd.html) ===== */
+/* ===== STYLES FOR PROJECT DETAIL PAGES (like budhigpd.html) ===== */
 .project-detail {
-    max-width: 900px;         /* Same as .projects for consistency */
-    margin: 2rem auto;        /* Centers the container */
-    padding: 0 20px;          /* Adds side space on small screens */
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 20px;
 }
 
-/* Optional: add spacing between sections */
 .project-detail section {
     margin-bottom: 2.5rem;
-    background: white;        /* Gives a clean card-like feel */
+    background: white;
     padding: 1.5rem 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-/* Style for inline code (like the architecture line) */
 .project-detail code {
     background: #f0f0f0;
     padding: 0.2rem 0.4rem;
@@ -84,8 +82,7 @@ footer a {
     font-family: monospace;
 }
 
-/* Images inside project detail */
+/* Images inside project detail – border-radius removed to prevent clipping */
 .project-detail img {
-    border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
